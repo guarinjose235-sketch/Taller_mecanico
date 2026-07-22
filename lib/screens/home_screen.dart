@@ -3,6 +3,7 @@ import '../models/vehiculo.dart';
 import 'registrar_vehiculo_screen.dart';
 import 'lista_vehiculos_screen.dart';
 import 'resumen_screen.dart';
+import 'pagos_trabajadores_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final List<Vehiculo> vehiculos;
@@ -58,10 +59,19 @@ class HomeScreen extends StatelessWidget {
     await onRecargar();
   }
 
+  Future<void> _irAPagosTrabajadores(BuildContext context) async {
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const PagosTrabajadoresScreen(),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Taller de Vehículos')),
+      appBar: AppBar(title: const Text('Taller de Pintura')),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20),
@@ -69,7 +79,7 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const SizedBox(height: 12),
-              const Icon(Icons.car_repair, size: 72, color: Color(0xFF1565C0)),
+              const Icon(Icons.format_paint, size: 72, color: Color(0xFF1565C0)),
               const SizedBox(height: 12),
               const Text(
                 'Bienvenido',
@@ -78,7 +88,7 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                'Gestiona los vehículos que ingresan al taller',
+                'Gestiona los vehículos que ingresan a pintura',
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.grey[600]),
               ),
@@ -109,6 +119,13 @@ class HomeScreen extends StatelessWidget {
                 icono: Icons.bar_chart,
                 texto: 'Resumen',
                 onPressed: () => _irAResumen(context),
+              ),
+              const SizedBox(height: 14),
+              _botonMenu(
+                context,
+                icono: Icons.payments_outlined,
+                texto: 'Pagos de trabajadores',
+                onPressed: () => _irAPagosTrabajadores(context),
               ),
             ],
           ),

@@ -170,7 +170,7 @@ class _DetalleVehiculoScreenState extends State<DetalleVehiculoScreen> {
                           padding: const EdgeInsets.symmetric(
                               horizontal: 10, vertical: 6),
                           decoration: BoxDecoration(
-                            color: v.estado.color.withOpacity(0.15),
+                            color: v.estado.color.withValues(alpha: 0.15),
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Text(
