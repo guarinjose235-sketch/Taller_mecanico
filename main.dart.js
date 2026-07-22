@@ -19585,7 +19585,7 @@ r.toString
 A.ey(r)
 q=a.h(0,"swipeEdge")
 q.toString
-return new A.mK(s,r,B.IX[A.dI(q)])},
+return new A.mK(s,r,B.IW[A.dI(q)])},
 BM:function BM(a,b){this.a=a
 this.b=b},
 mK:function mK(a,b,c){this.a=a
@@ -27966,7 +27966,7 @@ l.push(new A.dV(n[0],n[1],n[2],n[3],B.kO[m]))}return l},
 cU(a){var s,r,q=this.a
 q===$&&A.a()
 s=q.a.getGlyphPositionAtCoordinate(a.a,a.b)
-r=B.IZ[J.aE(s.affinity.value)]
+r=B.IY[J.aE(s.affinity.value)]
 return new A.a9(J.aE(s.pos),r)},
 JQ(a){var s=this.a
 s===$&&A.a()
@@ -28452,7 +28452,7 @@ A.ob.prototype={
 I(){return"CanvasKitVariant."+this.b}}
 A.a2o.prototype={
 gmn(){var s=this.b,r=s==null?null:s.canvasKitVariant
-return A.aIM(B.J6,r==null?"auto":r)},
+return A.aIM(B.J5,r==null?"auto":r)},
 gGx(){var s,r=this.b
 if(r==null)s=null
 else{r=r.canvasKitMaximumSurfaces
@@ -42757,7 +42757,7 @@ r=A.mx(B.Mr,B.f,r==null?1:r)
 r.toString
 q=p.a8(q.gn())
 if(q==null)q=1
-return A.aB3(A.aA4(null,B.x,new A.tk(q,B.IV,new A.cA(B.Bt,this.e)),s,1,B.QB),r)}}
+return A.aB3(A.aA4(null,B.x,new A.tk(q,B.IU,new A.cA(B.Bt,this.e)),s,1,B.QB),r)}}
 A.GR.prototype={
 l(){var s=this,r=s.bl$
 if(r!=null)r.K(s.gfP())
@@ -49019,7 +49019,7 @@ if((g?A.j(m).i("aH.T").a(k):k)==null)m=""
 else{b.a.toString
 m=g?A.j(m).i("aH.T").a(k):k
 m.toString
-m=B.J3[A.auv(m)-1]+", "+B.HK[A.br(m)-1]+" "+A.cm(m)}k=A.aQ(a2,B.ae)
+m=B.J2[A.auv(m)-1]+", "+B.HK[A.br(m)-1]+" "+A.cm(m)}k=A.aQ(a2,B.ae)
 k=k==null?a:k.gbD()
 k=(k==null?B.W:k).jq(0,3).aF(14)
 f=b.a6o(a2).ad(0,k/14)
@@ -49117,7 +49117,7 @@ A.Un.prototype={
 mt(){return this.cy},
 qh(a){this.aD()},
 kn(a){a.toString
-return B.J7[A.dI(a)]},
+return B.J6[A.dI(a)]},
 kK(){var s=this.y
 return(s==null?A.j(this).i("aH.T").a(s):s).a}}
 A.Um.prototype={
@@ -88235,7 +88235,7 @@ k===$&&A.a()
 k=A.l7(!1,k,B.Ha,f,B.RM,f,f,B.c2,f)
 j=A.b8("Trabajos solicitados",f,f,f,B.dm,f,f,f)
 i=t.FW
-i=A.a_(new A.ac(B.IS,new A.anS(g),i),i.i("as.E"))
+i=A.a_(new A.ac(B.J7,new A.anS(g),i),i.i("as.E"))
 h=t.p
 i=A.c([new A.b3(B.dI,c,f),b,B.bL,s,B.dk,new A.b3(B.dI,r,f),q,B.dk,new A.b3(B.dI,p,f),o,B.bL,n,B.bL,m,B.bL,l,B.bL,k,B.dk,new A.b3(B.dI,j,f),A.agd(i,8,8)],h)
 c=g.ax
@@ -92378,9 +92378,9 @@ B.kN=new A.zb(2,"mandatory")
 B.oW=new A.zb(3,"endOfText")
 B.HF=new A.zd(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Ja=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
-B.IT=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
+B.IS=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
 B.JV=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
-B.HI=s([B.Ja,B.IT,B.JV],t.zg)
+B.HI=s([B.Ja,B.IS,B.JV],t.zg)
 B.oX=s(["text","multiline","number","phone","datetime","emailAddress","url","visiblePassword","name","address","none","webSearch","twitter"],t.s)
 B.HK=s(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],t.s)
 B.I7=s([4,9,14,19],t.t)
@@ -92388,10 +92388,10 @@ B.mz=new A.Fm(0,"named")
 B.B6=new A.Fm(1,"anonymous")
 B.Ih=s([B.mz,B.B6],A.aq("y<Fm>"))
 B.oY=s(["January","February","March","April","May","June","July","August","September","October","November","December"],t.s)
-B.IW=s([0.41233895,0.35762064,0.18051042],t.n)
+B.IV=s([0.41233895,0.35762064,0.18051042],t.n)
 B.IA=s([0.2126,0.7152,0.0722],t.n)
 B.JR=s([0.01932141,0.11916382,0.95034478],t.n)
-B.d3=s([B.IW,B.IA,B.JR],t.zg)
+B.d3=s([B.IV,B.IA,B.JR],t.zg)
 B.oZ=s([0,4,12,1,5,13,3,7,15],t.t)
 B.Yp=new A.fS(0,1)
 B.Yu=new A.fS(0.5,1)
@@ -92418,12 +92418,12 @@ B.Jy=s([2.33888662,1.28698796],t.n)
 B.JA=s([2.48660575,1.36351941],t.n)
 B.Iw=s([2.62226596,1.44717976],t.n)
 B.ID=s([2.7514899,1.53385819],t.n)
-B.J5=s([3.36298265,1.98288283],t.n)
+B.J4=s([3.36298265,1.98288283],t.n)
 B.IL=s([4.08649929,2.23811846],t.n)
-B.IY=s([4.85481134,2.47563463],t.n)
+B.IX=s([4.85481134,2.47563463],t.n)
 B.Iz=s([5.62945551,2.72948597],t.n)
 B.IJ=s([6.43023796,2.98020421],t.n)
-B.p_=s([B.II,B.HM,B.Jy,B.JA,B.Iw,B.ID,B.J5,B.IL,B.IY,B.Iz,B.IJ],t.zg)
+B.p_=s([B.II,B.HM,B.Jy,B.JA,B.Iw,B.ID,B.J4,B.IL,B.IX,B.Iz,B.IJ],t.zg)
 B.Iv=s([B.jn,B.jo],A.aq("y<wM>"))
 B.Iy=s([18,15,10,12,15,18,15,12,12],t.n)
 B.IB=s(["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],t.s)
@@ -92454,29 +92454,29 @@ B.Yg=new A.lo(8,0.12)
 B.Yf=new A.lo(12,0.14)
 B.p2=s([B.Ye,B.Yj,B.Yh,B.Yi,B.Yg,B.Yf],A.aq("y<lo>"))
 B.p3=s([0,21,51,121,151,191,271,321,360],t.n)
-B.IS=s(["Cambio de aceite","Frenos","Motor","Suspensi\xf3n","Electricidad","Pintura","Lavado","Otro"],t.s)
 B.Br=new A.If(2,"outer")
 B.ns=new A.x(0.09803921568627451,0,0,0,B.e)
 B.f=new A.h(0,0)
 B.BY=new A.bp(0.2,B.Br,B.ns,B.f,11)
-B.IV=s([B.BY],t.F)
+B.IU=s([B.BY],t.F)
 B.A9=new A.BM(0,"left")
 B.Aa=new A.BM(1,"right")
-B.IX=s([B.A9,B.Aa],A.aq("y<BM>"))
+B.IW=s([B.A9,B.Aa],A.aq("y<BM>"))
 B.ab=new A.C0(0,"upstream")
-B.IZ=s([B.ab,B.j],A.aq("y<C0>"))
+B.IY=s([B.ab,B.j],A.aq("y<C0>"))
 B.al=new A.C5(0,"rtl")
 B.a_=new A.C5(1,"ltr")
 B.kO=s([B.al,B.a_],A.aq("y<C5>"))
 B.iM=new A.i2(0,"carro")
 B.Ay=new A.i2(1,"moto")
 B.p4=s([B.iM,B.Ay],A.aq("y<i2>"))
-B.J3=s(["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],t.s)
+B.J2=s(["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],t.s)
 B.Dr=new A.ob(0,"auto")
 B.Ds=new A.ob(1,"full")
 B.Dt=new A.ob(2,"chromium")
-B.J6=s([B.Dr,B.Ds,B.Dt,B.cs],A.aq("y<ob>"))
-B.J7=s([B.cU,B.cv,B.eT,B.cV],A.aq("y<j7>"))
+B.J5=s([B.Dr,B.Ds,B.Dt,B.cs],A.aq("y<ob>"))
+B.J6=s([B.cU,B.cv,B.eT,B.cV],A.aq("y<j7>"))
+B.J7=s(["Pintura completa","Retoque de pintura","Cambio de color","Latoner\xeda y pintura","Pulida y brillado","Desabolladura","Antichoque / laca","Otro"],t.s)
 B.b5=new A.eU(1,"fuchsia")
 B.J8=s([B.a2,B.b5,B.D,B.b0,B.aA,B.b1],A.aq("y<eU>"))
 B.AQ=new A.uX(0,"topLeft")
@@ -92649,8 +92649,8 @@ B.BR=new A.bp(-7,B.P,B.bS,B.Mm,15)
 B.Mq=new A.h(0,24)
 B.C8=new A.bp(3,B.P,B.bT,B.Mq,38)
 B.C2=new A.bp(8,B.P,B.bD,B.vn,46)
-B.IU=s([B.BR,B.C8,B.C2],t.F)
-B.Lo=new A.ce([0,B.Jr,1,B.JI,2,B.It,3,B.JC,4,B.HL,6,B.IC,8,B.I6,9,B.Ik,12,B.IH,16,B.IG,24,B.IU],A.aq("ce<z,X<bp>>"))
+B.IT=s([B.BR,B.C8,B.C2],t.F)
+B.Lo=new A.ce([0,B.Jr,1,B.JI,2,B.It,3,B.JC,4,B.HL,6,B.IC,8,B.I6,9,B.Ik,12,B.IH,16,B.IG,24,B.IT],A.aq("ce<z,X<bp>>"))
 B.bX=new A.f(4294968065)
 B.lK=new A.a6(B.bX,!1,!1,!0,!1,B.m)
 B.bG=new A.f(4294968066)
@@ -93169,28 +93169,28 @@ B.Ic=s([54,null,null,8589935158],t.Z)
 B.Id=s([55,null,null,8589935159],t.Z)
 B.Ie=s([56,null,null,8589935160],t.Z)
 B.Ig=s([57,null,null,8589935161],t.Z)
-B.J_=s([8589934852,8589934852,8589934853,null],t.Z)
+B.IZ=s([8589934852,8589934852,8589934853,null],t.Z)
 B.HP=s([4294967555,null,4294967555,null],t.Z)
 B.HQ=s([4294968065,null,null,8589935154],t.Z)
 B.HR=s([4294968066,null,null,8589935156],t.Z)
 B.HS=s([4294968067,null,null,8589935158],t.Z)
 B.HT=s([4294968068,null,null,8589935160],t.Z)
 B.HY=s([4294968321,null,null,8589935157],t.Z)
-B.J0=s([8589934848,8589934848,8589934849,null],t.Z)
+B.J_=s([8589934848,8589934848,8589934849,null],t.Z)
 B.HO=s([4294967423,null,null,8589935150],t.Z)
 B.HU=s([4294968069,null,null,8589935153],t.Z)
 B.HN=s([4294967309,null,null,8589935117],t.Z)
 B.HV=s([4294968070,null,null,8589935159],t.Z)
 B.HZ=s([4294968327,null,null,8589935152],t.Z)
-B.J1=s([8589934854,8589934854,8589934855,null],t.Z)
+B.J0=s([8589934854,8589934854,8589934855,null],t.Z)
 B.HW=s([4294968071,null,null,8589935155],t.Z)
 B.HX=s([4294968072,null,null,8589935161],t.Z)
-B.J2=s([8589934850,8589934850,8589934851,null],t.Z)
-B.vc=new A.ce(["*",B.I_,"+",B.I0,"-",B.I1,".",B.I2,"/",B.I3,"0",B.I4,"1",B.I5,"2",B.I8,"3",B.I9,"4",B.Ia,"5",B.Ib,"6",B.Ic,"7",B.Id,"8",B.Ie,"9",B.Ig,"Alt",B.J_,"AltGraph",B.HP,"ArrowDown",B.HQ,"ArrowLeft",B.HR,"ArrowRight",B.HS,"ArrowUp",B.HT,"Clear",B.HY,"Control",B.J0,"Delete",B.HO,"End",B.HU,"Enter",B.HN,"Home",B.HV,"Insert",B.HZ,"Meta",B.J1,"PageDown",B.HW,"PageUp",B.HX,"Shift",B.J2],A.aq("ce<F,X<z?>>"))
+B.J1=s([8589934850,8589934850,8589934851,null],t.Z)
+B.vc=new A.ce(["*",B.I_,"+",B.I0,"-",B.I1,".",B.I2,"/",B.I3,"0",B.I4,"1",B.I5,"2",B.I8,"3",B.I9,"4",B.Ia,"5",B.Ib,"6",B.Ic,"7",B.Id,"8",B.Ie,"9",B.Ig,"Alt",B.IZ,"AltGraph",B.HP,"ArrowDown",B.HQ,"ArrowLeft",B.HR,"ArrowRight",B.HS,"ArrowUp",B.HT,"Clear",B.HY,"Control",B.J_,"Delete",B.HO,"End",B.HU,"Enter",B.HN,"Home",B.HV,"Insert",B.HZ,"Meta",B.J0,"PageDown",B.HW,"PageUp",B.HX,"Shift",B.J1],A.aq("ce<F,X<z?>>"))
 B.If=s([B.pj,null,null,B.v_],t.L)
 B.Jw=s([B.uM,null,null,B.v0],t.L)
 B.IF=s([B.uN,null,null,B.v1],t.L)
-B.J4=s([B.uO,null,null,B.d7],t.L)
+B.J3=s([B.uO,null,null,B.d7],t.L)
 B.HG=s([B.uP,null,null,B.v2],t.L)
 B.JK=s([B.uQ,null,null,B.l0],t.L)
 B.JH=s([B.uR,null,null,B.fi],t.L)
@@ -93219,7 +93219,7 @@ B.Ip=s([B.fh,B.fh,B.i1,null],t.L)
 B.IR=s([B.fc,null,null,B.fj],t.L)
 B.Jh=s([B.fd,null,null,B.fl],t.L)
 B.Iq=s([B.cx,B.cx,B.d6,null],t.L)
-B.LE=new A.ce(["*",B.If,"+",B.Jw,"-",B.IF,".",B.J4,"/",B.HG,"0",B.JK,"1",B.JH,"2",B.Il,"3",B.JQ,"4",B.JF,"5",B.Ij,"6",B.HJ,"7",B.Iu,"8",B.Jx,"9",B.Jz,"Alt",B.In,"AltGraph",B.JL,"ArrowDown",B.IM,"ArrowLeft",B.IN,"ArrowRight",B.IO,"ArrowUp",B.JP,"Clear",B.JD,"Control",B.Io,"Delete",B.Jc,"End",B.IP,"Enter",B.Ii,"Home",B.IQ,"Insert",B.JE,"Meta",B.Ip,"PageDown",B.IR,"PageUp",B.Jh,"Shift",B.Iq],A.aq("ce<F,X<f?>>"))
+B.LE=new A.ce(["*",B.If,"+",B.Jw,"-",B.IF,".",B.J3,"/",B.HG,"0",B.JK,"1",B.JH,"2",B.Il,"3",B.JQ,"4",B.JF,"5",B.Ij,"6",B.HJ,"7",B.Iu,"8",B.Jx,"9",B.Jz,"Alt",B.In,"AltGraph",B.JL,"ArrowDown",B.IM,"ArrowLeft",B.IN,"ArrowRight",B.IO,"ArrowUp",B.JP,"Clear",B.JD,"Control",B.Io,"Delete",B.Jc,"End",B.IP,"Enter",B.Ii,"Home",B.IQ,"Insert",B.JE,"Meta",B.Ip,"PageDown",B.IR,"PageUp",B.Jh,"Shift",B.Iq],A.aq("ce<F,X<f?>>"))
 B.Mg={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.vd=new A.bR(B.Mg,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.LJ=new A.ce([B.fL,-7,B.eh,1,B.iN,7,B.dp,-1],A.aq("ce<la,z>"))
