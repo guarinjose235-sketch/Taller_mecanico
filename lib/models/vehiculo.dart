@@ -65,15 +65,15 @@ extension EstadoVehiculoExtension on EstadoVehiculo {
   }
 }
 
-/// Lista fija de trabajos que se pueden seleccionar en el checklist.
+/// Lista fija de trabajos de pintura que se pueden seleccionar en el checklist.
 const List<String> tiposDeTrabajo = [
-  'Cambio de aceite',
-  'Frenos',
-  'Motor',
-  'Suspensión',
-  'Electricidad',
-  'Pintura',
-  'Lavado',
+  'Pintura completa',
+  'Retoque de pintura',
+  'Cambio de color',
+  'Latonería y pintura',
+  'Pulida y brillado',
+  'Desabolladura',
+  'Antichoque / laca',
   'Otro',
 ];
 
