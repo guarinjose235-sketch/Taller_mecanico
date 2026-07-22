@@ -63,7 +63,7 @@ class _TallerVehiculosAppState extends State<TallerVehiculosApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Taller de Vehículos',
+      title: 'Taller de Pintura',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
@@ -98,7 +98,7 @@ class _TallerVehiculosAppState extends State<TallerVehiculosApp> {
 
     if (_errorCarga != null) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Taller de Vehículos')),
+        appBar: AppBar(title: const Text('Taller de Pintura')),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(24),
