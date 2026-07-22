@@ -28,7 +28,8 @@ class TarjetaVehiculo extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 26,
-                backgroundColor: const Color(0xFF1565C0).withOpacity(0.1),
+                backgroundColor:
+                    const Color(0xFF1565C0).withValues(alpha: 0.1),
                 child:
                     Icon(vehiculo.tipo.icono, color: const Color(0xFF1565C0)),
               ),
@@ -83,7 +84,8 @@ class TarjetaVehiculo extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(
                               horizontal: 8, vertical: 4),
                           decoration: BoxDecoration(
-                            color: vehiculo.estado.color.withOpacity(0.15),
+                            color: vehiculo.estado.color
+                                .withValues(alpha: 0.15),
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Row(
