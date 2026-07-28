@@ -1,47 +1,48 @@
 import 'dart:convert';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:http/http.dart' as http;
 import '../models/pago_trabajador.dart';
 
-/// Maneja la persistencia de los pagos a trabajadores usando
-/// shared_preferences, igual que db_helper.dart pero con su propia
-/// clave para no mezclarse con los datos de los vehículos.
+/// Maneja la persistencia de los pagos a trabajadores usando la
+/// Realtime Database de Firebase (API REST), igual que db_helper.dart
+/// pero con su propio nodo para no mezclarse con los vehículos.
 class PagosHelper {
   PagosHelper._interno();
   static final PagosHelper instancia = PagosHelper._interno();
 
-  static const String _clave = 'pagos_trabajadores_data';
+  // TODO: usa la MISMA URL que pusiste en db_helper.dart.
+  static const String _baseUrl =
+      'https://taller-pintura-default-rtdb.firebaseio.com';
+  static const String _nodo = 'pagos_trabajadores';
+
+  Uri _uri([String extra = '']) => Uri.parse('$_baseUrl/$_nodo$extra.json');
 
   Future<List<PagoTrabajador>> obtenerPagos() async {
-    final prefs = await SharedPreferences.getInstance();
-    final String? data = prefs.getString(_clave);
-    if (data == null || data.isEmpty) {
-      return <PagoTrabajador>[];
-    }
     try {
-      final List<dynamic> listaJson = jsonDecode(data) as List<dynamic>;
-      return listaJson
-          .map((item) => PagoTrabajador.fromMap(item as Map<String, dynamic>))
+      final response = await http.get(_uri());
+      if (response.statusCode != 200 ||
+          response.body.isEmpty ||
+          response.body == 'null') {
+        return <PagoTrabajador>[];
+      }
+      final Map<String, dynamic> data =
+          jsonDecode(response.body) as Map<String, dynamic>;
+      return data.entries
+          .map((e) => PagoTrabajador.fromMap(
+              Map<String, dynamic>.from(e.value as Map)))
           .toList();
     } catch (e) {
       return <PagoTrabajador>[];
     }
   }
 
-  Future<void> _guardarTodos(List<PagoTrabajador> pagos) async {
-    final prefs = await SharedPreferences.getInstance();
-    final String data = jsonEncode(pagos.map((p) => p.toMap()).toList());
-    await prefs.setString(_clave, data);
-  }
-
   Future<void> insertarPago(PagoTrabajador pago) async {
-    final List<PagoTrabajador> actuales = await obtenerPagos();
-    actuales.add(pago);
-    await _guardarTodos(actuales);
+    await http.put(
+      _uri('/${pago.id}'),
+      body: jsonEncode(pago.toMap()),
+    );
   }
 
   Future<void> eliminarPago(String id) async {
-    final List<PagoTrabajador> actuales = await obtenerPagos();
-    actuales.removeWhere((p) => p.id == id);
-    await _guardarTodos(actuales);
+    await http.delete(_uri('/$id'));
   }
 }
